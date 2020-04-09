@@ -1,0 +1,33 @@
+GET http://localhost:3000/person/5e8ea2cc539c7c7b8ac3d209
+Accept: application/json
+
+###
+GET http://localhost:3000/person
+Accept: application/json
+
+###
+POST http://localhost:3000/person
+Content-Type: application/json
+
+{
+  "name": "Lucas Gomes",
+  "mail": "lucasgms16@gmail.com",
+  "role": "Admin"
+}
+
+###
+
+PUT http://localhost:3000/person/5e8ea2cc539c7c7b8ac3d209
+Content-Type: application/json
+
+{
+  "name": "Lucas Gomes Silva",
+  "mail": "lucasgms16@gmail.com",
+  "role": "Administrador"
+}
+
+###
+DELETE http://localhost:3000/person/5e8ea2cc539c7c7b8ac3d209
+Accept: application/json
+
+
